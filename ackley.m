@@ -9,7 +9,7 @@
 
 clear all; close all; clc
 
-%% 1) VALORES DE ENTRADA QUE PIDE SFOA (se definen aqui)
+%% 1) VALORES DE ENTRADA (EDITABLES)
 % Numero de individuos (estrellas de mar) de la poblacion
 Npop = 50;
 
@@ -54,8 +54,8 @@ plotAckleySurface(lb, ub);
 % ------------------------------------------------------------------
 % ackleyfun: la funcion objetivo de Ackley, tal cual el codigo de SFU.
 % Solo cambia el nombre para que este archivo funcione como script.
-% Entradas: xx = vector de coordenadas; a, b, c constantes con valor por
-% defecto (20, 0.2, 2*pi).
+% Entradas: xx = vector de coordenadas; a, b, c constantes con valor
+% por defecto (20, 0.2, 2*pi).
 % ------------------------------------------------------------------
 function y = ackleyfun(xx, a, b, c)
 % Numero de dimensiones del punto a evaluar
